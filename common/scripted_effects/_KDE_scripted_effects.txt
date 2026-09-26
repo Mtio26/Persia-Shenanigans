@@ -751,6 +751,7 @@ KDE_bi_yearly_event_fire_1862 = {
 		country_event = { id = par.1 days = 279 } # 1862.10.7
 	}
 	PER = {
+		country_event = { id = persia.800 days = 90 random_days = 29 } # 1862.04.01~30
 		country_event = { id = persia.352 days = 160 } # 1862.6.10
 		country_event = { id = persia.359 days = 61 random_days = 92 } # 1862.2~5.1
 		country_event = { id = persia.119 days = 379 } # 1863.01.15

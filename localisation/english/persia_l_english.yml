@@ -535,6 +535,12 @@
  persia.122.d: "Tired of Grand Viziers Naseraddin, inspired by the west, decided to not appoint a new Grand Vizier but to instead form a State Council filled with 6 Ministries. The council is formed by the ministries of interior, foreign affairs, war, finance, justice, and state duties, with Mirza Jafar Khan as head of council. While the head of council officially is not a Grand Vizier, it barely differs in role, the main difference being the official splitting of tasks into ministries, yet the council head and lastly and most importantly the Shah still have the final say in the end.\n\n The reform has been received positively by some and negatively by others. Is this a step into the future, closing Persia to the European standard, or is this nothing but a meaningless change, merely a charade?"
  persia.122.a: "Persia is going with the times!"
 
+ persia.123.t: "Aqa Khan Urges Exile of Aziz Khan and Yusuf Ashtiani"
+ persia.123.d: "Grand Vizier Aqa Khan, warning us about the great danger of the two influential politicians Aziz Khan and Yusuf Ashtiani, has urged us strongly to exile them, accusing them of treason and conspiring against the state, while listing reasons why it’d be the best course of action to protect the nation's future and our authority. He argues that:\n\n Aziz Khan, army chief and a man of the Kurdish Mokri tribe, had not just led us to failure in the Anglo-Persian, thus making him not suited to further lead our armed forces, but also has, supported by Yusuf Ashtiani and groups kurdish regiments, plotted his removal from the post of Grand Vizier in a failed power grab to secure their influence in the court against anyone's wishes.\n Aqa Khan cites a list of complaints brought against him to the Shah by the Shah's wife Jeyran as proof for his claim, claiming that it was a part of their conspiracy against him, fabricated with the intent of replacing him with one of their own."
+ persia.123.a: "Imprison and exile them for their actions"
+ persia_123_a_tt: "§YAziz Khan§! and §YYusuf Ashtiani§! become §Runavailable§! while in exile"
+ persia.123.b: "Scheming between court nobles does not concern the Shah"
+
  persia.201.t: "The Akhunds: A Growing Presence in Persia"
  persia.201.d: "The Akhunds, a powerful faction within the Shia clergy, have long influenced the lives of the Persian people. They position themselves as the protectors of Islamic values, seeking to control religious teachings and exert influence over political decisions. Over the years, their presence has only grown, often challenging the authority of the Shah and the state. They claim to guide the people spiritually, but their ambitions extend far beyond the mosque. As Persia moves forward, the role of the Akhunds becomes an obstacle the monarchy must contend with."
  persia.201.a: "The Akhunds claim to lead with faith, but their grip tightens around Persia’s future."
@@ -865,6 +871,10 @@
  persia.527.d: "Coming to calm the situation the British diplomats arrive in the gulf. And in a quite unexpected declaration have made it clear they see the Persian side as correct, leaving the Sultan of Oman and Muscat embarrassed for requesting the mediation. While the diplomats of Oman and Muscat feel betrayed by their strategic partner the Persian counterparts were overjoyed by this delightful news.\nNow the tension and potential for conflict between Shah and Sultan have reached heights not seen since the last war."
  persia.527.a: "Why would they do this to us??"
  persia.527.b: "Glad they went this path, time for Oman’s expulsion"
+
+ persia.800.t: "Death of Khanlar Mirza"
+ persia.800.d: "Unfortunate news has arrived from Isfahan, reporting the death of army general and governor of the qajar prince Khanlar Mirza."
+ persia.800.a: "May he rest in peace"
 
  ### DECISIONS ###
  PER_decision_standardize_divisions: "Standardize Divisions"
@@ -1248,3 +1258,4 @@ wargoal_third_herat_war_desc: "Persian Dominance Over The Greater Khorasan Regio
 PER_administrative_costs_increase_tt: "This will §RIncrease§! §YAdministrative Costs§! by:"
 PER_autocompleted_except_if_not: "Depending on the circumstances the focus will either become §YAvailable§! for taking or get §YAutocompleted§!"
 PER_letting_lease_continue_tt: "We'll be forced to wait for the lease to expire or for a cancellation clause to retake the port."
+PER_exile: "Is currently in exile"

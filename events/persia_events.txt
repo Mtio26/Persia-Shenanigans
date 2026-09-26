@@ -5,7 +5,8 @@ add_namespace = persia
 	#persia.201-250 BoP Events
 	#persia.251-361 Economy Events
 	#persia.351-500 Flavour Events
-	#persia.501-x Foreign Relations Events
+	#persia.501-800 Foreign Relations Events
+	#persia.801-x Character Events
 
 	country_event = { # What Army path to take? 	#Made effects hidden so that player actually reads
 		id = persia.1
@@ -725,6 +726,26 @@ country_event = { # Formation of the State Council
 		add_to_variable = { PER_economy_mi = -0.1 tooltip = money_income_tooltip }
 	}
 }
+country_event = { # Aqa Khan Urges Exile of Aziz Khan and Yusuf Ashtiani
+	id = persia.123
+	title = persia.123.t
+	desc = persia.123.d
+	is_triggered_only = yes
+	option = {
+		name = persia.123.a
+		custom_effect_tooltip = historical_option
+		custom_effect_tooltip = persia_123_a_tt
+		PER_aziz_khan_mokri = {
+			set_character_flag = PER_exile
+			remove_unit_leader_role = yes
+		}
+		PER_mirza_yusuf_ashtiani = { set_character_flag = PER_exile }
+	}
+	option = {
+		name = persia.123.b
+	}
+}
+
 	###################
 	### BoP Events ####
 	###################
@@ -2493,5 +2514,16 @@ country_event = { # Britain Intervenes in support of Persia
 		OMA = { country_event = { id = persia.511 } }
 		# This focus will trigger the war
 		complete_national_focus = PER_focus_expell_oman_from_abbas
+	}
+}
+country_event = { # Death of Khanlar Mirza
+	id = persia.800
+	title = persia.800.t
+	desc = persia.800.d
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_funeral
+	option = {
+		name = persia.800.a
+		retire_character = PER_khanlar_mirza
 	}
 }

@@ -89,12 +89,11 @@ characters={
 			idea_token = PER_aziz_khan_mokri_theorist
 			ledger = army
 			allowed = { original_tag = PER }
+			available = { NOT = { has_character_flag = PER_exile } }
 			research_bonus = {
 				#naval_doctrine = 0.1
 			}
-			traits = {
-				military_theorist
-			}
+			traits = { military_theorist }
 			ai_will_do = { factor = 10 }
 		}
 	} 
@@ -244,6 +243,7 @@ characters={
 			slot = political_advisor
 			idea_token = PER_advisor_mirza_yusuf_ashantiani
 			allowed = { original_tag = PER }
+			available = { NOT = { has_character_flag = PER_exile } }
 			traits = {
 				PER_trait_finance_minister_reformist
 			}
