@@ -709,6 +709,11 @@
  persia.280.a: "We cannot afford to anger Russia. The concession must be reviewed."
  persia.280.b: "We will not bow to Russian pressure. Persia will continue with British support!"
 
+ persia.281.t: "The Opium Boom"
+ persia.281.d: "Recently our tax officials have reported a new development in the farming sector. A boom in poppy cultivation was observed and attributed to the recent developments in China. After the British victory in the Second Opium War the Qing were forced to open up their markets to foreign opium, thus largely increasing global poppy demand. Following this a noticeable sum of farmers started growing the poppy plant hoping to make a quick profit, ditching their previous ways of subsistence farming.\n\nThis could prove itself a lucrative opportunity for our nation, which lies perfectly to cultivate such a plant, and our poor population to profit, if we decide to fully embrace and invest into opium production."
+ persia.281.a: "Opium is the future!"
+ persia.281.tt: "Investments in §YOpium§! will become more §Gprofitable§!"
+
  persia.351.t: "The Death of Jeyran"
  persia.351.d: "The court has been struck by tragedy. Jeyran, Nasser al-Din Shah’s beloved wife, has passed away, leaving the Shah in a state of profound grief. Her loss is not just a personal tragedy for the Shah but has cast a pall over the entire court. Jeyran, known for her beauty, wit, and the deep connection she shared with the Shah, was one of the few who brought true joy into his life. As the Shah mourns, the mood in Tehran has darkened. His sadness is palpable, and the loss of his confidante leaves him deeply affected, unable to find solace in the affairs of state. The absence of Jeyran will linger over the palace for many years, and her memory will remain etched in the Shah's heart forever."
  persia.351.a: "In her death, Jeyran takes with her a part of the Shah’s heart, leaving behind only sorrow."
@@ -953,10 +958,7 @@
  PER_decision_cotton_growers_farm_isfahan: "Invest in Cotton Fields"
  PER_decision_expand_carpet_building_space_isfahan: "Prepare for Carpet-Weaving Industry"
  PER_decision_expand_carpet_farm_isfahan: "Build Carpet-Weaving Industry"
- PER_decision_opium_production_isfahan: "Expand the Opium Industry in Isfahan"
- PER_decision_opium_production_khorsan: "Expand the Opium Industry in Khorsan"
- PER_decision_opium_production_tehran: "Expand the Opium Industry in Tehran"
- PER_decision_opium_production_kerman: "Expand the Opium Industry in Kerman"
+ PER_decision_opium_production: "Expand Local Opium Industry"
  PER_decision_fars_fields: "Develop the Fars Countryside"
 
  PER_decision_category_concessions: "Concession Decisions"

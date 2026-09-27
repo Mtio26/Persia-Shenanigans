@@ -1754,6 +1754,19 @@ country_event = { #  Russian Opposition to the Reuter Concession
 		reverse_add_opinion_modifier = { target = RUS modifier = PER_decrease_small }
 	}
 }
+country_event = { #  A Rise in Opium Production
+	id = persia.281
+	title = persia.281.t
+	desc = persia.281.d
+	picture = GFX_report_event_persian_opium
+	is_triggered_only = yes
+
+	option = {
+		name = persia.281.a
+		add_political_power = 20
+		custom_effect_tooltip = persia.281.tt
+	}
+}
 	######################
 	### Flavour Events ###
 	######################
