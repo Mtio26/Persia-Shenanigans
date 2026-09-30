@@ -2880,7 +2880,14 @@ PER_decision_category_economy = {
 				}
 			}
 			custom_effect_tooltip = PER_modifies_economy_tt
-			add_to_variable = { PER_economy_mi = 0.02 tooltip = money_income_tooltip }
+			if = {
+				limit = { has_country_flag = PER_mass_sell_opium_to_qing }
+				add_to_variable = { PER_economy_mi = 0.04 tooltip = money_income_tooltip }
+			}
+			else = {
+				add_to_variable = { PER_economy_mi = 0.02 tooltip = money_income_tooltip }
+				add_to_temp_variable = { PER_extra_cash_when_opium_booms = 0.02 }
+			}
 		}
 
 		complete_effect = {
@@ -3033,7 +3040,7 @@ PER_decision_category_economy = {
 
 		remove_effect = {
 			custom_effect_tooltip = PER_modifies_economy_tt
-			add_to_variable = { PER_economy_mi = 0.8 tooltip = money_income_tooltip }
+			add_to_variable = { PER_economy_mi = 0.4 tooltip = money_income_tooltip }
 		}
 	}
 	PER_decision_kashan_pottery = {

@@ -1231,7 +1231,6 @@ PER_develop_border_region_tt: "Unlocks §YDecisions§! to Develop the §ROttoman
 PER_increase_relief_efforts_tt: "We Need to §YHelp§! the §RPeople§! if we want a safer §YPerisia§!"
 PER_implement_economic_reform_tt: "We Have to Focus on the §YUnderlying Causes§! of the ongoing §RCrisis§! and §GFoster Long-term Growth§!"
 PER_economic_aid_events_tt: "§RIn Order to Accept Some Parts of Aid you Need either Road, Carpet or Telegraph Concessions Idea§!"
-PER_opium_production_decisions_tt: "Unlocks §YDecision§! to §CExpand§! Opium Industry"
 PER_european_model_army_missions_tt: "The Focus §YModifies§! §PEuropean Army§! Spirit if the Spirit is Active"
 PER_invite_european_advisors_tt: "Unlocks §YDecision§! to §CInvite European Advisors§!"
 PER_tanzimat_tt: "The §PTime§! for §YReforms§! is §CNow§!"
@@ -1261,3 +1260,4 @@ PER_administrative_costs_increase_tt: "This will §RIncrease§! §YAdministrativ
 PER_autocompleted_except_if_not: "Depending on the circumstances the focus will either become §YAvailable§! for taking or get §YAutocompleted§!"
 PER_letting_lease_continue_tt: "We'll be forced to wait for the lease to expire or for a cancellation clause to retake the port."
 PER_exile: "Is currently in exile"
+PER_higher_opium_profits: "Thanks to Increased Opium Prises:"
