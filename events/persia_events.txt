@@ -2305,6 +2305,7 @@ country_event = { # Herat Ultimum Accepted
 		unlock_decision_tooltip = PER_decision_reintegrate_herat
 		increase_legitimacy_by_five = yes
 		add_political_power = 50
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 country_event = { # Persia Demands Herat Transfer
@@ -2400,6 +2401,7 @@ country_event = { # Afghanistan Sues for Peace
 		add_political_power = 100
 		add_stability = 0.05
 		increase_ps_by_one = yes
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 country_event = { # Humiliation in Afghanistan

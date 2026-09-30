@@ -32,8 +32,9 @@ focus_tree = {
 	focus = {
 		id = PER_european_imports_persian_exports
 		icon = GFX_Focus_Per_exports_euro_imports
-		x = 5
+		x = 0
 		y = 1
+		relative_position_id = PER_state_of_the_economy
 		cost = 42
 
 		prerequisite = { focus = PER_state_of_the_economy }
@@ -50,8 +51,9 @@ focus_tree = {
 	focus = {
 		id = PER_the_cotton_market
 		icon = GFX_Focus_Agriculture_cotton
-		x = 1
-		y = 2
+		x = -4
+		y = 1
+		relative_position_id = PER_european_imports_persian_exports
 		cost = 35
 
 		prerequisite = { focus = PER_european_imports_persian_exports }
@@ -65,15 +67,13 @@ focus_tree = {
 	focus = {
 		id = PER_cotton_growers_in_isfahan
 		icon = GFX_Focus_Agriculture_look_dawn
-		x = 1
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = PER_the_cotton_market
 		cost = 35
-
 		prerequisite = { focus = PER_the_cotton_market }
-
 		ai_will_do = { factor = 1 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
 		completion_reward = {
 			unlock_decision_tooltip = PER_decision_cotton_growers_building_space_isfahan
 			unlock_decision_tooltip = PER_decision_cotton_growers_farm_isfahan
@@ -83,8 +83,9 @@ focus_tree = {
 	focus = {
 		id = PER_expand_the_carpet_weaving_industry
 		icon = GFX_Focus_Production_Fabric
-		x = 1
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = PER_cotton_growers_in_isfahan
 		cost = 35
 
 		prerequisite = { focus = PER_cotton_growers_in_isfahan }
@@ -101,8 +102,9 @@ focus_tree = {
 	focus = {
 		id = PER_persian_looms
 		icon = GFX_Focus_Resource_Textile
-		x = 1
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = PER_expand_the_carpet_weaving_industry
 		cost = 35
 
 		prerequisite = { focus = PER_expand_the_carpet_weaving_industry }
@@ -119,8 +121,9 @@ focus_tree = {
 	focus = {
 		id = PER_the_textile_industry
 		icon = GFX_Focus_Urbanization
-		x = 1
-		y = 6
+		x = 0
+		y = 1
+		relative_position_id = PER_persian_looms
 		cost = 35
 
 		prerequisite = { focus = PER_persian_looms }
@@ -137,10 +140,10 @@ focus_tree = {
 	focus = {
 		id = PER_trade_boom_with_europe
 		icon = GFX_Focus_Economy_Prosperity
-		x = 4
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = PER_european_imports_persian_exports
 		cost = 35
-
 		prerequisite = { focus = PER_european_imports_persian_exports }
 
 		ai_will_do = { factor = 1 }
@@ -155,8 +158,9 @@ focus_tree = {
 	focus = {
 		id = PER_import_european_goods
 		icon = GFX_Focus_Trade_Mediterranean
-		x = 3
-		y = 3
+		x = -1
+		y = 1
+		relative_position_id = PER_trade_boom_with_europe
 		cost = 35
 
 		prerequisite = { focus = PER_trade_boom_with_europe }
@@ -170,8 +174,10 @@ focus_tree = {
 	focus = {
 		id = PER_increase_tariffs
 		icon = GFX_Focus_Trade_International
-		x = 3
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = PER_import_european_goods
+
 		cost = 70
 
 		prerequisite = { focus = PER_import_european_goods }
@@ -192,8 +198,9 @@ focus_tree = {
 	focus = {
 		id = PER_tea_and_sugar_imports
 		icon = GFX_Focus_Agriculture_tea
-		x = 3
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = PER_increase_tariffs
 		cost = 35
 
 		prerequisite = { focus = PER_increase_tariffs }
@@ -212,8 +219,9 @@ focus_tree = {
 	focus = {
 		id = PER_keeping_the_artisanal_nature
 		icon = GFX_Focus_Agriculture_sugar
-		x = 5
-		y = 3
+		x = 1
+		y = 1
+		relative_position_id = PER_trade_boom_with_europe
 		cost = 35
 
 		prerequisite = { focus = PER_trade_boom_with_europe }
@@ -233,8 +241,9 @@ focus_tree = {
 	focus = {
 		id = PER_american_civil_war_boost
 		icon = GFX_Focus_War_American_Civil_War
-		x = 5
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = PER_keeping_the_artisanal_nature
 		cost = 35
 
 		available = { has_global_flag = ACW_American_Civil_War }
@@ -256,8 +265,9 @@ focus_tree = {
 	focus = {
 		id = PER_gilan_silk_cultivation
 		icon = GFX_Focus_Resource_Cotton
-		x = 5
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = PER_american_civil_war_boost
 		cost = 35
 
 		prerequisite = { focus = PER_american_civil_war_boost }
@@ -278,8 +288,9 @@ focus_tree = {
 	focus = {
 		id = PER_export_raw_silk
 		icon = GFX_Focus_Resource_Silk
-		x = 4
-		y = 6
+		x = 1
+		y = 1
+		relative_position_id = PER_tea_and_sugar_imports
 		cost = 42
 
 		prerequisite = { focus = PER_tea_and_sugar_imports }
@@ -297,8 +308,9 @@ focus_tree = {
 	focus = {
 		id = PER_textile_exports_to_the_caucasus
 		icon = GFX_Focus_Diplomatic_Ally_RUS_2
-		x = 3
-		y = 7
+		x = 2
+		y = 1
+		relative_position_id = PER_the_textile_industry
 		cost = 35
 
 		prerequisite = { focus = PER_export_raw_silk }
