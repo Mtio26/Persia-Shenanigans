@@ -426,7 +426,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = PER_stabilize_the_wheat_market
 		cost = 35
-		available = { has_completed_focus = PER_bushehr_port_improvements }
 		prerequisite = { focus = PER_stabilize_the_wheat_market }
 
 		ai_will_do = { factor = 1 }
