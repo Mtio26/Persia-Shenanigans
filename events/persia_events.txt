@@ -2573,3 +2573,14 @@ country_event = { # Death of Khanlar Mirza
 		retire_character = PER_khanlar_mirza
 	}
 }
+country_event = { # Death of Khan Mokri
+	id = persia.801
+	title = persia.801.t
+	desc = persia.801.d
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_funeral
+	option = {
+		name = persia.801.a
+		retire_character = PER_aziz_khan_mokri
+	}
+}

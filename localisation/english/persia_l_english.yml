@@ -881,9 +881,13 @@
  persia.527.a: "Why would they do this to us??"
  persia.527.b: "Glad they went this path, time for Oman’s expulsion"
 
- persia.800.t: "Death of Khanlar Mirza"
+ persia.800.t: "The Death of Khanlar Mirza"
  persia.800.d: "Unfortunate news has arrived from Isfahan, reporting the death of army general and governor of the qajar prince Khanlar Mirza."
- persia.800.a: "May he rest in peace"
+ persia.800.a: "May he rest in peace."
+
+ persia.801.t: "The Death of Aziz Khan Mokri"
+ persia.801.d: "The turbulent life of Aziz Khan, a man who rose to the high rank of army leader as a member of the Kurdish Mokri tribe for his skills, has come to an end. In his lifetime he had fought off schemes and foul play by his enemies with now death itself proving to be the only enemy he could not endure through."
+ persia.801.a: "The Shah feels saddened losing him."
 
  ### DECISIONS ###
  PER_decision_standardize_divisions: "Standardize Divisions"
