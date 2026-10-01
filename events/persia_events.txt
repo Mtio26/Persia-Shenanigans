@@ -1789,8 +1789,13 @@ country_event = { #  A Rise in Opium Production
 		add_political_power = 20
 		custom_effect_tooltip = persia.281.tt
 		set_country_flag = PER_mass_sell_opium_to_qing
-		custom_effect_tooltip = PER_higher_opium_profits
-		add_to_variable = { PER_economy_mi = PER_extra_cash_when_opium_booms }
+		if = {
+			limit = {
+				check_variable = { PER_extra_cash_when_opium_booms > 0 }
+			}
+			custom_effect_tooltip = PER_higher_opium_profits
+			add_to_variable = { PER_economy_mi = PER_extra_cash_when_opium_booms }
+		}
 	}
 }
 	######################
