@@ -291,7 +291,7 @@ focus_tree = {
 
 	focus = {
 		id = PER_gilan_silk_cultivation
-		icon = GFX_Focus_Resource_Cotton
+		icon = GFX_Focus_Agriculture_silk
 		x = 0
 		y = 1
 		relative_position_id = PER_keeping_the_artisanal_nature
