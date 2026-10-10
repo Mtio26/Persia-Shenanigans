@@ -2834,9 +2834,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		search_filters = { FOCUS_FILTER_ECONOMY FOCUS_FILTER_DIPLOMACY }
 		completion_reward = {
-			country_event = {
-				id = persia.115
-				random_days = 5
+			country_event = { id = persia.115 random_days = 5
 			}
 		}
 	}
@@ -2871,9 +2869,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		search_filters = { FOCUS_FILTER_DIPLOMACY }
 		completion_reward = {
-			country_event = {
-				id = persia.116
-				random_days = 7
+			country_event = { id = persia.116 random_days = 7
 			}
 		}
 	}
@@ -2933,10 +2929,7 @@ focus_tree = {
 
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			country_event = {
-				id = persia.117
-				random_days = 7
-			}
+			country_event = { id = persia.117 random_days = 7 }
 		}
 	}
 	######################
@@ -2944,14 +2937,15 @@ focus_tree = {
 	######################
 
 	focus = {
-		id = PER_modernize_our_navy
-		icon = GFX_Focus_Navy_Upgrade
+		id = PER_reestablish_a_navy
+		icon = GFX_Focus_Production_Mass
 		x = 77
 		y = 0
 		cost = 35
 
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			country_event = { id = persia.950 }
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
 				uses = 1
@@ -2966,14 +2960,30 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PER_bandar_abbas_naval_base
-		icon = GFX_goal_focus_RUS_armoured_steam_fleet_tactic
+		id = PER_bushehr_port_improvements
+		icon = GFX_Focus_repair_navy
 		x = -2
 		y = 1
 		cost = 35
+		mutually_exclusive = { focus = PER_european_assistance }
+		relative_position_id = PER_reestablish_a_navy
+		prerequisite = { focus = PER_reestablish_a_navy }
+
+		ai_will_do = { factor = 1 }
+		search_filters = { FOCUS_FILTER_NAVY }
+
+		completion_reward = { unlock_decision_tooltip = PER_decision_bushehr_port_improvements }
+	}
+
+	focus = {
+		id = PER_bandar_abbas_naval_base
+		icon = GFX_Focus_Port_Expansion
+		x = 1
+		y = 1
+		cost = 35
 		available = { owns_state = 1482 }
-		relative_position_id = PER_modernize_our_navy
-		prerequisite = { focus = PER_modernize_our_navy }
+		relative_position_id = PER_bushehr_port_improvements
+		prerequisite = { focus = PER_bushehr_port_improvements }
 
 		ai_will_do = { factor = 1 }
 		completion_reward = { unlock_decision_tooltip = PER_decision_bandar_abbas_naval_base }
@@ -2985,37 +2995,22 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 35
-		relative_position_id = PER_bandar_abbas_naval_base
-		prerequisite = { focus = PER_bandar_abbas_naval_base }
+		relative_position_id = PER_bushehr_port_improvements
+		prerequisite = { focus = PER_bushehr_port_improvements }
 
 		ai_will_do = { factor = 1 }
 		completion_reward = { unlock_decision_tooltip = PER_decision_enzeli_port_expansion }
 	}
 
 	focus = {
-		id = PER_bushehr_port_improvements
-		icon = GFX_Focus_repair_navy
+		id = PER_naval_academy_of_teheran
+		icon = GFX_Focus_naval_school
 		x = 1
 		y = 1
 		cost = 35
-		relative_position_id = PER_bandar_abbas_naval_base
-		prerequisite = { focus = PER_bandar_abbas_naval_base }
-
-		ai_will_do = { factor = 1 }
-		search_filters = { FOCUS_FILTER_NAVY }
-
-		completion_reward = { unlock_decision_tooltip = PER_decision_bushehr_port_improvements }
-	}
-
-	focus = {
-		id = PER_naval_academy_of_teheran
-		icon = GFX_Focus_naval_school
-		x = 0
-		y = 2
-		cost = 35
-		relative_position_id = PER_bandar_abbas_naval_base
-		prerequisite = { focus = PER_bushehr_port_improvements }
-		prerequisite = { focus = PER_enzeli_port_expansion }
+		relative_position_id = PER_enzeli_port_expansion
+		prerequisite = { focus = PER_enzeli_port_expansion focus = PER_bandar_abbas_naval_base }
+		prerequisite = {  }
 		ai_will_do = { factor = 1 }
 		search_filters = { FOCUS_FILTER_NAVY }
 
@@ -3060,8 +3055,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 35
-		relative_position_id = PER_modernize_our_navy
-		prerequisite = { focus = PER_modernize_our_navy }
+		mutually_exclusive = { focus = PER_bushehr_port_improvements }
+		relative_position_id = PER_reestablish_a_navy
+		prerequisite = { focus = PER_reestablish_a_navy }
 
 		ai_will_do = { factor = 1 }
 		search_filters = { FOCUS_FILTER_NAVY }
@@ -3096,8 +3092,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PER_purchase_british_ships
-		icon = GFX_Goal_ironclad_focus
+		id = PER_commission_german_ships
+		icon = GFX_Goal_gunboat_focus
 		x = 1
 		y = 1
 		cost = 35
@@ -3107,18 +3103,18 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_DIPLOMACY }
 
-		completion_reward = { unlock_decision_tooltip = PER_decision_british_ships }
+		completion_reward = { unlock_decision_tooltip = PER_decision_french_ships }
 	}
+
 
 	focus = {
 		id = PER_new_naval_tactics
 		icon = GFX_Focus_Navy_Tactics
-		x = 0
-		y = 2
+		x = 2
+		y = 1
 		cost = 35
-		relative_position_id = PER_european_assistance
-		prerequisite = { focus = PER_purchase_french_vessels }
-		prerequisite = { focus = PER_purchase_british_ships }
+		relative_position_id = PER_naval_academy_of_teheran
+		prerequisite = { focus = PER_naval_academy_of_teheran focus = PER_european_training_methods }
 
 		ai_will_do = { factor = 1 }
 		search_filters = { FOCUS_FILTER_NAVY }
@@ -3135,11 +3131,11 @@ focus_tree = {
 	focus = {
 		id = PER_european_training_methods
 		icon = GFX_Goal_european_advisers
-		x = 0
+		x = 1
 		y = 1
 		cost = 35
-		relative_position_id = PER_new_naval_tactics
-		prerequisite = { focus = PER_new_naval_tactics }
+		relative_position_id = PER_purchase_french_vessels
+		prerequisite = { focus = PER_commission_german_ships focus = PER_purchase_french_vessels }
 
 		ai_will_do = { factor = 1 }
 		search_filters = { FOCUS_FILTER_NAVY }
@@ -3156,83 +3152,15 @@ focus_tree = {
 	focus = {
 		id = PER_national_shipbuilding_program
 		icon = GFX_Focus_repair_navy
-		x = 0
+		x = 1
 		y = 1
 		cost = 35
-		relative_position_id = PER_european_training_methods
-		prerequisite = { focus = PER_european_training_methods }
+		relative_position_id = PER_bandar_abbas_naval_base
+		prerequisite = { focus = PER_bandar_abbas_naval_base }
 
 		ai_will_do = { factor = 1 }
 		search_filters = { FOCUS_FILTER_NAVY }
 
 		completion_reward = { add_ideas = PER_idea_shipbuilding_program }
-	}
-	focus = {
-		id = PER_gulf_trade_dominance
-		icon = GFX_Focus_Naval_Industry_Profits
-		x = -1
-		y = 1
-		relative_position_id = PER_national_shipbuilding_program
-		cost = 35
-
-		allow_branch = { has_idea = PER_idea_persian_gulf_dominance }
-
-		available = {	# Why here again ? So that Player can see this idea cause it to show up
-			has_idea = PER_idea_persian_gulf_dominance
-			has_completed_focus = PER_european_imports_persian_exports
-		}
-
-		prerequisite = { focus = PER_national_shipbuilding_program }
-
-		ai_will_do = { factor = 1 }
-		search_filters = { FOCUS_FILTER_NAVY }
-
-		completion_reward = {
-			activate_mission = PER_mission_gulf_trade_dominance
-			unlock_decision_tooltip = PER_decision_expand_trade
-			unlock_decision_tooltip = PER_decision_reform_sea_tolls
-		}
-	}
-	focus = {
-		id = PER_gulf_dominance
-		icon = GFX_Focus_Production_Mass
-		x = 1
-		y = 1
-		relative_position_id = PER_national_shipbuilding_program
-		cost = 35
-
-		allow_branch = { has_idea = PER_idea_persian_gulf_dominance }
-
-		available = {	# Why here again ? So that Player can see this idea cause it to show up
-			has_idea = PER_idea_persian_gulf_dominance
-		}
-
-		prerequisite = { focus = PER_national_shipbuilding_program }
-
-		ai_will_do = { factor = 1 }
-		search_filters = { FOCUS_FILTER_NAVY }
-
-		completion_reward = { activate_mission = PER_mission_gulf_dominance }
-	}
-	focus = {
-		id = PER_rebirth_of_navy
-		icon = GFX_focus_JAP_naval_modernization
-		x = 1
-		y = 1
-		relative_position_id = PER_gulf_trade_dominance
-		cost = 35
-
-		available = {
-			has_idea = PER_idea_persian_gulf_dominance
-			has_completed_focus = PER_naval_school_of_bandar_abbas
-		}
-
-		prerequisite = { focus = PER_gulf_trade_dominance }
-		prerequisite = { focus = PER_gulf_dominance }
-
-		ai_will_do = { factor = 1 }
-		search_filters = { FOCUS_FILTER_NAVY }
-
-		completion_reward = { add_ideas = PER_idea_rebirth_of_navy }
 	}
 }

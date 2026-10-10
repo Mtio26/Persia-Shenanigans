@@ -5,8 +5,9 @@ add_namespace = persia
 	#persia.201-250 BoP Events
 	#persia.251-361 Economy Events
 	#persia.351-500 Flavour Events
-	#persia.501-800 Foreign Relations Events
-	#persia.801-x Character Events
+	#persia.501-799 Foreign Relations Events
+	#persia.800-949 Character Events
+	#persia.950-x Naval Events
 
 	country_event = { # What Army path to take? 	#Made effects hidden so that player actually reads
 		id = persia.1
@@ -229,7 +230,7 @@ country_event = { #  Persian Envoys Request our Military Support
 		name = persia.10.a
 	}
 }
-country_event = { #  Hidden Kde army chief Mohammed Khan
+country_event = { #  Hidden Kde army chief Mohammed Khan becomes available
 	id = persia.11
 	title = persia.11.t
 	desc = persia.11.d
@@ -2582,5 +2583,15 @@ country_event = { # Death of Khan Mokri
 	option = {
 		name = persia.801.a
 		retire_character = PER_aziz_khan_mokri
+	}
+}
+country_event = { # A FLeet of Fishing Boats
+	id = persia.950
+	title = persia.950.t
+	desc = persia.950.d
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_funeral
+	option = {
+		name = persia.950.a
 	}
 }

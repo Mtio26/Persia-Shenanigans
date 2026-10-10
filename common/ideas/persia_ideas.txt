@@ -767,22 +767,6 @@ ideas = {
 				}
 			}
 		}
-		PER_idea_rebirth_of_navy = {
-			allowed = { original_tag = PER }
-			
-			removal_cost = -1
-			
-			picture = generic_idea_shipyard
-
-			modifier = {
-				production_speed_dockyard_factor = 0.15
-				industrial_capacity_dockyard = 0.15
-				navy_spending_cost_factor = -0.1
-				hidden_modifier = {
-					navy_spending_cost_factor_from_ideas = -0.1
-				}
-			}
-		}
 	}
 	hidden_ideas = {
 		PER_idea_french_silk_agreement = {
